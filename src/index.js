@@ -9,6 +9,7 @@ import decode from 'jwt-decode';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './rootReducer';
 import { userLoggedIn } from './actions/auth';
 
@@ -39,4 +40,5 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register();
+// registerServiceWorker();
